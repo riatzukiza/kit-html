@@ -9,3 +9,7 @@
               (then-do
                (.end @stream))
               ))
+
+(macro def-markup-template (name args element)
+       `(def @name @args
+          (markup @element)))
