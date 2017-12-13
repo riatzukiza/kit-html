@@ -1,0 +1,11 @@
+{
+    "name":"kit-html",
+    "version":"0.0.0",
+    "scripts":{
+        "test":"sibilant -x ./tests/basic.sibilant"
+    },
+    "dependencies":{
+        "kit":"git+ssh://aaron.kettlelogic.space:1250/H/gits/kit",
+        "kit-interface":"git+ssh://aaron.kettlelogic.space:1250/H/gits/kit-interface"
+    }
+}
