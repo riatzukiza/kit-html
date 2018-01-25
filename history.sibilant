@@ -1,3 +1,4 @@
+(meta (assign sibilant.dir "/home/aaron/devel/tower/libs/kits/kit-html/tests/") null)(add-to-module-lookup"/home/aaron/devel/tower/libs/kits/kit-html/tests/")
 (include "../index")
 (import-namespace kit)
 (include "../inc/macros")
@@ -15,3 +16,4 @@
 
                    (.div "and that was the time."))))))
 (render-test-document (.create-write-stream fs 'test.html))
+(meta (assign sibilant.dir  "./") null)
