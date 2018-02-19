@@ -7,5 +7,6 @@
 (def-markup-template hello (name)
   (.div .id (+ name "-container")
         (.h1 "Hello," name)))
+
 (with-markup-to-stream process.stdout
   (.html (.body (hello "Aaron"))))

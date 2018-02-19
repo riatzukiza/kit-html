@@ -43,8 +43,7 @@
   (gett style this.*node.style)
 
   (def-generic clear (*node)
-    (assign *node.innerHTML ""
-            ) this)
+    (assign *node.innerHTML "") this)
 
   (def-generic render (*parent attributes tag-name *node children)
 
