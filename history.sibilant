@@ -22,3 +22,5 @@
 (include "kit/inc/shell")
 (import-namespace shell)
 (shell (npm run compile) (git add ".") (git commit ["-m" "'moved index.sibilant, compiled'"]) (git push github master))
+(.cwd process)
+(shell (npm run compile) (git add ".") (git commit ["-m" "'moved index.sibilant, compiled'"]) (git push github master))

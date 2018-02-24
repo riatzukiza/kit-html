@@ -7,4 +7,4 @@
 (include "kit-interface/header")
 (import-namespace interface)
 
-(include "./src/html.sibilant")
+(include "./html.sibilant")
