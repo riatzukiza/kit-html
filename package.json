@@ -2,7 +2,8 @@
     "name":"kit-html",
     "version":"0.0.0",
     "scripts":{
-        "test":"sibilant -x ./tests/basic.sibilant"
+        "test":"sibilant -x ./tests/basic.sibilant",
+        "compile":"sibilant ./src/index.sibilant -o ."
     },
     "dependencies":{
         "kit":"git+https://github.com/riatzukiza/kit.git",

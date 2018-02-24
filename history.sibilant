@@ -17,3 +17,8 @@
                    (.div "and that was the time."))))))
 (render-test-document (.create-write-stream fs 'test.html))
 (meta (assign sibilant.dir  "./") null)
+(render-test-document (.create-write-stream fs 'test.html))
+(shell)
+(include "kit/inc/shell")
+(import-namespace shell)
+(shell (npm run compile) (git add ".") (git commit ["-m" "'moved index.sibilant, compiled'"]) (git push github master))
