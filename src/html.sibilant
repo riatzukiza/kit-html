@@ -85,6 +85,7 @@
                    (end-opening-tag stream)
                    (-> (render-children stream body))
                    (render-closing-tag stream name))))))
+(export Html-element)
 
 (var html-element (create Html-element))
 (assign module.export html-element)

@@ -165,6 +165,7 @@ var HtmlElement = Interface.define("HtmlElement", {
     
    }
  });
+exports.HtmlElement = HtmlElement;
 var htmlElement = create(HtmlElement);
 module.export = htmlElement;
 exports.htmlElement = htmlElement;
