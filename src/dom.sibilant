@@ -1,3 +1,6 @@
+(namespace dom)
+(include "../inc/xml")
+
 (macro dom (root) `(xml create-document-node @root))
 
 (macro with-dom (parent root)
@@ -83,30 +86,28 @@
     (.emit *parent 'remove *node)
     this))
 
-(specify Document-root (extend Document-node))
-
-(describe Document-root
-          (gett *parent this)
-          (tag-name "html")
-          (*node document.document-element)
-          (*children []))
-(specify Document-body (extend Document-node))
-
-(describe Document-body
-          (gett *parent this)
-          (tag-name "body")
-          (*node document.body)
-          (*children []))
-
-(specify Document-head (extend Document-node))
-
-(describe Document-head
-          (gett *parent this)
-          (tag-name "head")
-          (*node document.head)
-          (*children []))
+(define Document-root  Document-node
+  (gett *parent this)
+  (tag-name "html")
+  (*node document.document-element)
+  (*children []))
 
 
+(define Document-body  Document-node
+  (gett *parent this)
+  (tag-name "body")
+  (*node document.body)
+  (*children []))
+
+
+
+
+(define Document-head  Document-node
+  (gett *parent this)
+  (tag-name "head")
+  (*node document.head)
+  (*children [])
+  )
 
 
 (var create-document-node (create Document-node))
