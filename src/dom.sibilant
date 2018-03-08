@@ -1,5 +1,6 @@
 (namespace dom)
 (include "../inc/xml")
+(include "kit-events/header")
 
 (macro dom (root) `(xml create-document-node @root))
 
